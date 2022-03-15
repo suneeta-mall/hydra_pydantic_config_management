@@ -1,0 +1,4 @@
+database: school
+tables:
+  - name: students
+  - name: exams

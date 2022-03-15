@@ -1,0 +1,3 @@
+database: warehouse
+tables:
+  - name: items

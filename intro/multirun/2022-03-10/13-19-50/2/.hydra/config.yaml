@@ -1,0 +1,11 @@
+db:
+  driver: mysql
+  user: suneeta
+  pwd: secret
+ui:
+  create_db: true
+  view: true
+schema:
+  database: warehouse
+  tables:
+  - name: items

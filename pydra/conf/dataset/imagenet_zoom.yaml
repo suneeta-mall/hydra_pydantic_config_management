@@ -1,0 +1,3 @@
+name: imagenet_zoom
+path: /datasets/imagenet
+zoom: 20

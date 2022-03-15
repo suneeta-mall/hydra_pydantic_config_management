@@ -1,0 +1,4 @@
+type: resnet
+num_layers: 50
+width: 10
+v: 1.0

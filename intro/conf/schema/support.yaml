@@ -1,0 +1,4 @@
+database: support
+tables:
+  - name: users
+  - name: issues

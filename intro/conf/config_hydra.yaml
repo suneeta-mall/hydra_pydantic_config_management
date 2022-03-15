@@ -1,0 +1,32 @@
+defaults:
+  - _self_  # Note: to source default of hydra config 
+  - db: mysql
+  - ui: full
+  - schema: school
+
+hydra:
+  job:
+    env_set: 
+      HDF5_USE_FILE_LOCKING: "false"
+      ## Useful for distributed train setup
+      # RANK: ${hydra.job.num}
+    env_copy: ## Local environment copy
+      - API_KEY  
+
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: "[%(levelname)s] - %(message)s"
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      handlers: [console]
+
+    disable_existing_loggers: false
+
+  run:
+    dir: outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}

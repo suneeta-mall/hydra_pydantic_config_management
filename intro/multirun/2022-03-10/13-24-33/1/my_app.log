@@ -1,0 +1,22 @@
+[2022-03-10 13:24:34,421][__main__][INFO] - Type of cfg is: <class 'omegaconf.dictconfig.DictConfig'>
+[2022-03-10 13:24:34,422][root][INFO] - type of Object is <class '__main__.Config'>
+[2022-03-10 13:24:34,425][__main__][INFO] - Merged Yaml:
+db:
+  user: suneeta
+  pwd: secret
+  driver: mysql
+  timeout: 100
+ui:
+  create_db: true
+  view: true
+schema:
+  database: support
+  tables:
+  - name: users
+  - name: issues
+
+[2022-03-10 13:24:34,425][__main__][INFO] - {'user': 'suneeta', 'pwd': 'secret', 'driver': 'mysql', 'timeout': 100}
+[2022-03-10 13:24:34,425][__main__][INFO] - MySQLConfig(user='suneeta', pwd='secret', driver='mysql', timeout=100)
+[2022-03-10 13:24:34,425][__main__][INFO] - mysql
+[2022-03-10 13:24:34,425][__main__][INFO] - mysql
+[2022-03-10 13:24:34,426][__main__][INFO] - my_app

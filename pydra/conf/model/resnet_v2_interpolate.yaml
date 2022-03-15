@@ -1,0 +1,4 @@
+defaults:
+  - resnet_v2
+zoom: ${dataset.zoom}
+context: 1024

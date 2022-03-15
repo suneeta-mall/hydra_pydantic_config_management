@@ -1,0 +1,13 @@
+db:
+  user: suneeta
+  pwd: secret
+  driver: mysql
+  timeout: 100
+ui:
+  create_db: true
+  view: true
+schema:
+  database: school
+  tables:
+  - name: students
+  - name: exams

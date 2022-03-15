@@ -1,0 +1,13 @@
+defaults:  
+  - dataset: imagenet_zoom
+  - model: resnet_v2 # resnet_v2_interpolate #resnet_v1  #alexnet 
+  - secrets: keys
+  - optional dataset_model: ${dataset}_${model}
+  - override hydra/job_logging: custom
+
+debug: true
+
+
+hydra:
+  run:
+    dir: outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}

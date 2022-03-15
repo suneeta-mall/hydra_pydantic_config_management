@@ -1,0 +1,5 @@
+type: resnet
+num_layers: 50
+width: 10
+context: 256
+v: 2.0
