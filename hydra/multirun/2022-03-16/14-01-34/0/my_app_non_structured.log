@@ -1,0 +1,18 @@
+[2022-03-16 14:01:35,176][__main__][INFO] - Type of cfg is: <class 'omegaconf.dictconfig.DictConfig'>
+[2022-03-16 14:01:35,178][__main__][INFO] - Merged Yaml:
+db:
+  driver: mysql
+  user: suneeta
+  pwd: secret
+ui:
+  create_db: true
+  view: true
+schema:
+  database: school
+  tables:
+  - name: students
+  - name: exams
+
+[2022-03-16 14:01:35,178][__main__][INFO] - {'driver': 'mysql', 'user': 'suneeta', 'pwd': 'secret'}
+[2022-03-16 14:01:35,178][__main__][INFO] - mysql
+[2022-03-16 14:01:35,178][__main__][INFO] - my_app_non_structured
